@@ -10,6 +10,7 @@ Source0: http://ovh.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.ta
 URL: http://torsmo.sourceforge.net/
 Group: Monitoring
 License: BSD
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: X11-devel
 
 %description
