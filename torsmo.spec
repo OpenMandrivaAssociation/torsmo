@@ -1,6 +1,6 @@
 %define name torsmo
 %define version 0.18
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name: %{name}
 Summary: System monitor like gkrellm, but lightweight
