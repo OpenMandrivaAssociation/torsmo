@@ -3,7 +3,7 @@
 %define release %mkrel 1
 
 Name: %{name}
-Summary: Torsmo is a system monitor like gkrellm, but lightweight
+Summary: System monitor like gkrellm, but lightweight
 Version: %{version}
 Release: %{release}
 Source0: http://ovh.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.bz2
