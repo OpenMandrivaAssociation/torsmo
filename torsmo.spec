@@ -7,11 +7,12 @@ Summary: System monitor like gkrellm, but lightweight
 Version: %{version}
 Release: %{release}
 Source0: http://ovh.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.bz2
+Patch0: torsmo-0.18-link.patch
 URL: http://torsmo.sourceforge.net/
 Group: Monitoring
 License: BSD
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: X11-devel
+BuildRequires: libx11-devel
 
 %description
 Torsmo is a system monitor that sits in the corner of your desktop. It's very
@@ -20,19 +21,17 @@ percentagebars if you want it to ;) and the only lib it uses is Xlib.
 Torsmo can show various information about your system and it's peripherals.
 
 %prep
-
 %setup -q
+%patch0 -p0
 
 %build
-
-%configure
-
+autoreconf -fi
+%configure2_5x
 %make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
-%makeinstall
+%makeinstall_std
 
 %clean
 rm -rf $RPM_BUILD_ROOT
