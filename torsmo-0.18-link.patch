@@ -1,0 +1,11 @@
+--- Makefile.am.link	2011-01-28 10:29:33.000000000 +0100
++++ Makefile.am	2011-01-28 10:30:17.000000000 +0100
+@@ -27,7 +27,7 @@
+ torsmo_SOURCES = common.c fs.c $(linux) mail.c mixer.c $(nvctrl) $(seti) \
+ $(solaris) $(freebsd) $(netbsd) torsmo.c torsmo.h x11.c
+ 
+-torsmo_LDFLAGS = $(X11_LIBS) $(XFT_LIBS)
++torsmo_LDADD = $(X11_LIBS) $(XFT_LIBS)
+ 
+ man_MANS = torsmo.1
+ 
