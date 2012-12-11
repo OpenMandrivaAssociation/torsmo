@@ -42,3 +42,37 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/torsmo.1*
 %{_bindir}/torsmo
 
+
+
+%changelog
+* Fri Jan 28 2011 Funda Wang <fwang@mandriva.org> 0.18-6mdv2011.0
++ Revision: 633655
+- fix linkage
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+    - rebuild
+    - rebuild
+
+* Mon Feb 18 2008 Thierry Vignaud <tv@mandriva.org> 0.18-2mdv2008.1
++ Revision: 171147
+- rebuild
+- fix "foobar is blabla" summary (=> "blabla") so that it looks nice in rpmdrake
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Mon Dec 17 2007 Thierry Vignaud <tv@mandriva.org> 0.18-1mdv2008.1
++ Revision: 128536
+- kill re-definition of %%buildroot on Pixel's request
+- buildrequires X11-devel instead of XFree86-devel
+- import torsmo
+
+
+* Thu Jun 02 2005 Nicolas Lécureuil <neoclust@mandriva.com> 0.18-1mdk
+- 0.17
+
+
+* Tue Jul 27 2004 Lenny Cartier <lenny@mandrakesoft.com> 0.17-1mdk
+- from Robert Weiler <mdk-rpms@robwei.de> :
+	- First build of torsmo for Mandrake
