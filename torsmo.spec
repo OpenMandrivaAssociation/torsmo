@@ -12,7 +12,7 @@ URL: http://torsmo.sourceforge.net/
 Group: Monitoring
 License: BSD
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: libx11-devel
+BuildRequires: pkgconfig(x11)
 
 %description
 Torsmo is a system monitor that sits in the corner of your desktop. It's very
