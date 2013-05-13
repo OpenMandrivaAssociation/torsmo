@@ -1,6 +1,6 @@
 %define name torsmo
 %define version 0.18
-%define release %mkrel 6
+%define release  7
 
 Name: %{name}
 Summary: System monitor like gkrellm, but lightweight
@@ -11,7 +11,6 @@ Patch0: torsmo-0.18-link.patch
 URL: http://torsmo.sourceforge.net/
 Group: Monitoring
 License: BSD
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: pkgconfig(x11)
 
 %description
