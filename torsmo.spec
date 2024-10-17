@@ -8,7 +8,7 @@ Version: %{version}
 Release: %{release}
 Source0: http://ovh.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.bz2
 Patch0: torsmo-0.18-link.patch
-URL: http://torsmo.sourceforge.net/
+URL: https://torsmo.sourceforge.net/
 Group: Monitoring
 License: BSD
 BuildRequires: pkgconfig(x11)
