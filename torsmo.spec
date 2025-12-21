@@ -11,6 +11,11 @@ Patch0: torsmo-0.18-link.patch
 URL: https://torsmo.sourceforge.net/
 Group: Monitoring
 License: BSD
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: pkgconfig(x11)
 
 %description
